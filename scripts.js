@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Matheus & Kauan', image: 'assets/artista-mateus-kauan.jpg' }
 
     ];
-
-
+    
     const albumsData = [
         { name: 'White Noise (sleep & Relaxation Sounds)', artist: 'Sleepy John', image: 'assets/album-white-noise.jpg' },
         { name: 'O Céu Explica Tudo(Ao Vivo)', artist: 'Henrique & juliano', image: 'assets/album-ceu-explica.jpg ' },
@@ -21,8 +20,22 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Escândalo Íntimo', artist: 'Luisa Sonza', image:'assets/album-escandalo.jpg' }
     ];
 
+
+    const musicasData = [
+        { name: 'ClickBait', image: 'assets/musicas-dosPredios.jpg' },
+        { name: 'Não temos Medo', image: 'assets/musicas-naoTemosMedo.jpeg' },
+        { name: 'Mãe Solteira', image: 'assets/musicas-maeSolteira.jpg' },
+        { name: 'Deixa eu ver se ta Lisinha', image: 'assets/musicas-deixaEuVer.jpeg' },
+        { name: 'Taylor', image: 'assets/musicas-taylor.jpg' },
+        { name: 'Three Little Birds', image: 'assets/musicas-bobMarley.jpg' }
+
+    ];
+    
+
+
     const artistGrid = document.querySelector('.artists-grid')
     const albumsGrid = document.querySelector('.albums-grid')
+    const musicasGrid = document.querySelector('.musicas-grid')
 
     //Sessão Artista
     // pegar artista por artista e colocar na tela
@@ -62,6 +75,24 @@ document.addEventListener('DOMContentLoaded', () => {
         albumsGrid.appendChild(albumCard)
 
     })
+
+    musicasData.forEach( musicas => {
+        // criando uma div 
+        const musicasCard = document.createElement('div')
+        // colocando uma class nela 
+        musicasCard.classList.add('musicas-card')
+        // estou inserindo o conteudo na div 
+        musicasCard.innerHTML = `
+           <img src="${musicas.image}" alt= "imagem do ${musicas.name}">
+           <div>
+              <h3>${musicas.name}</h3>
+              <p>Música</p>
+            </div>
+        `
+        //jogando as div no html 
+        musicasGrid.appendChild(musicasCard)
+    })
+
 })
 
 

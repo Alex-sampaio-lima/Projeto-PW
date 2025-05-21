@@ -127,7 +127,8 @@ main {
 }
 
 .artists-grid,
-.albums-grid {
+.albums-grid,
+.musicas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 24px;
@@ -135,7 +136,8 @@ main {
 }
 
 .artist-card,
-.album-card {
+.album-card,
+.musicas-card {
     background-color: #181818;
     padding: 16px;
     border-radius: 8px;
@@ -150,11 +152,19 @@ main {
 }
 
 .artist-card:hover,
-.album-card:hover {
+.album-card:hover,
+.musicas-card:hover {
     background-color: #282828;
 }
 
 .artist-card img {
+    width: 100%;
+    max-width: 70%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.musicas-card img {
     width: 100%;
     max-width: 70%;
     border-radius: 50%;
@@ -169,13 +179,17 @@ main {
     margin-bottom: 16px;
 }
 
+
+
 .artist-card h3,
-.album-card h3 {
+.album-card h3,
+.musicas-card h3 {
     font-size: 12px;
 }
 
 .artist-card p,
-.album-card p {
+.album-card p,
+.musicas-card p {
     font-size: 10px;
     color: #878386;
 }
