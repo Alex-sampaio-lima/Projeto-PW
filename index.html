@@ -2,17 +2,40 @@
 <html lang="pt-br">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/spotify-icon.jpg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/spotify-icon.jpg" />
     <script src="https://kit.fontawesome.com/49ee739b93.js" crossorigin="anonymous"></script>
     <!--Configuração dos Icons-->
-    <link rel="stylesheet" href="styles.css">
-    <title> Spotify - Web </title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Spotify - Web</title>
 </head>
 
 <body>
+    <!-- Novo Header do Spotify -->
+    <header class="spotify-header">
+        <div class="header-left">
+            <div class="spotify-logo">
+                <i class="fa-brands fa-spotify"></i>
+            </div>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="O que você quer ouvir?" />
+            </div>
+        </div>
+        <nav class="spotify-nav">
+            <a href="#" class="nav-item premium">Premium</a>
+            <a href="#" class="nav-item">Suporte</a>
+            <a href="#" class="nav-item">Baixar</a>
+            <span class="nav-divider">|</span>
+            <a href="#" class="nav-item install-app">
+                <i class="fa-solid fa-arrow-down-to-bracket"></i>
+                Instalar aplicativo
+            </a>
+            <a href="#" class="nav-item">Inscrever-se</a>
+            <a href="#" class="nav-item login-btn">Entrar</a>
+        </nav>
+    </header>
 
     <div class="container">
         <nav class="sidebar">
@@ -46,12 +69,8 @@
                 Português do Brasil
             </button>
         </nav>
-        <main>
-            <header class="search-bar"> <!-- Menu de pesquisa -->
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input placeholder="O que você quer ouvir?">
-            </header>
 
+        <main>
             <section class="content">
                 <h2>Músicas em Alta</h2>
                 <div class="musicas-grid">
@@ -67,19 +86,18 @@
                 <div class="albums-grid">
                     <!-- Inserir dados com JS -->
                 </div>
-
             </section>
         </main>
     </div>
 
     <div class="banner">
-       <div>
-         <h2> Testar o Premium de graça</h2>
-         <p>Inscreva-se para curtir  músicas ilimitadas só  com alguns anúncios. Não precisa de um cartão de credito.</p>
+        <div>
+            <h2>Testar o Premium de graça</h2>
+            <p>Inscreva-se para curtir músicas ilimitadas só com alguns anúncios. Não precisa de um cartão de crédito.
+            </p>
         </div>
         <button>Inscreva-se Grátis</button>
     </div>
-
 </body>
 
 <script src="./scripts.js"></script>
