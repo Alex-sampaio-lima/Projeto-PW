@@ -18,7 +18,7 @@ body {
 }
 
 .sidebar {
-    width: 300px;
+    width: 750px;
     background-color: #121212;
     padding: 10px;
     padding-bottom: 90px;
@@ -30,6 +30,17 @@ body {
 .nav-logo i {
     font-size: 24px;
 }
+
+.scroll-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    flex-grow: 1;
+    margin-top: 0;
+    overflow-y: auto;
+}
+
 
 .nav-library {
     display: flex;
